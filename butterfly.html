@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<htm lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my love">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="butterfly.css">	
+    <title> my love </title>
+  <!--[if lt IE 9]> 
+    <script src="html5shiv.min.js"></script>
+  <![endif]-->
+
+</head>    
+<body>
+<div class='circle'>
+<p class="p1"> Happy birthday my love</p>
+</div>
+<div class="container">
+    <div class="hover-container" onclick="myFunction();" id="myClick">
+        <div class="left wing"></div>
+        <div class="right wing"></div>
+        <div class="body"></div>
+        <div class="head"></div>
+    </div>
+</div>
+<div class="myheart">	
+	I 
+<svg class="heart" viewBox="0 0 32 29.6">
+  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+</svg> 
+You <br/><br/><br/><span style='font-size:40px; text-align:center; color:#fc2a62'>&#128525;</span> 
+<span style='font-size:40px;text-align:center;color:#fc2a62'>&#128525;</span>
+<span style='font-size:40px; text-align:center;color:#fc2a62'>&#128525;</span>
+<span style='font-size:40px; text-align:center; color:#fc2a62'>&#128525;</span>
+<span style='font-size:40px; text-align:center; color:#fc2a62'>&#128525;</span>
+<span style='font-size:40px; text-align:center; color:#fc2a62'>&#128525;</span>
+<span style='font-size:40px; text-align:center; color:#fc2a62'>&#128525;</span>
+<span style='font-size:40px; text-align:center; color:#fc2a62'>&#128525;</span>
+<a href ="love3.html" target=_self ><button class="btn1" onclick="myClick();" id="click">Click Me!</button></a>
+</div> 
+<script>  
+	function myFunction()
+	{
+	    var d = document.getElementsByClassName('myheart')[0];
+		var m = document.getElementsByClassName('container')[0];
+		var p = document.getElementsByClassName('circle')[0];
+		if (d.style.display === 'none' || d.style.display === '')
+		{
+		  d.style.display = 'block';
+		  m.style.display = 'none';
+		  p.style.display = 'none';
+		  document.body.style.backgroundColor = "#ff87ff";
+		}
+		else
+		{
+		  d.style.display = 'none';
+		  m.style.display = 'block';
+		}
+	}
+	var myClick = document.getElementById('myClick');
+	window.onload = function () {
+		'use strict';
+		setTimeout(function () {
+			myClick.click();
+		}, 6000);
+    };
+		var bt = document.getElementsByClassName('btn1')[0];
+		if (document.body.style.backgroundColor = "#ff87ff")
+		{
+			setTimeout(function () {
+				bt.click();
+			}, 12000);
+  	 	};
+</script>
+</body>
+</html>
